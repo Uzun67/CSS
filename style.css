@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "DMSerif" ;
+    src: url(./asset/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf);
+}
+
+body{
+    font-family: "DMSerif", Verdana;
+    background: url(./asset/img/nouriture.png) no-repeat center;
+    min-height: 100vh; /* (viewport height)VH = 100% de la taille de l'ecran*/
+}
+
+h1 {
+    text-transform: uppercase; 
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 2.5rem; /*les tailles de polices doivent etre en REM */
+    text-shadow: 15px 15px 2px #ba88bc;
+    color: rgb(32, 89, 15);
+}
