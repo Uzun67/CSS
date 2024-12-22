@@ -1,188 +1,63 @@
 @font-face {
-    font-family: "DMSerif" ;
-    src: url(./asset/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf);
+  font-family: "inter";
+  src: url(./asset/fonts/Inter_18pt-ExtraBold.ttf);
 }
 
-/* * {
-    margin: 0;
-    padding: 0;
-    border: 2px solid red;
-} */
-
-body{
-    font-family: "DMSerif", Verdana;
-    background: url(./asset/img/nouriture.png) center/cover;
-    min-height: 100vh; /* (viewport height)VH = 100% de la taille de l'ecran de l'utilisateur*/
-
-    /* background-size: cover; */
+* {
+  font-family: "inter";
+  background: rgb(33, 29, 29);
+  color: aliceblue;
+  /* border: 2px solid rgb(85, 255, 0); */
 }
 
-h1 {
-    text-transform: uppercase; 
-    letter-spacing: 3px;
-    text-align: center;
-    font-size: 8vw; /*viewport width permet d'etre responsive*/
-    text-shadow: 15px 15px 2px #ba88bc;
-    color: rgb(32, 89, 15);
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-main {
-    min-height: 500px;
-    width: 90%;
-    background: rgba(106, 180, 180, 0.79);
-    margin: 0 auto;
-    border: 2px solid rgb(0, 140, 255);
-    border-radius: 20px;
-    box-shadow: 0 -1px 20px 0 rgb(58 204 132);
-    padding: 15px;
+ul {
+  list-style: none;
+  display: flex;
 }
 
-h2 {
-    margin: 0;
+li {
+  margin: 50px;
+  align-items: center;
 }
 
-.flexbox,
-.grid,
-.absolute {
-    border: 2px solid skyblue;
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 20px;
-    min-height: 150px;
+/*HEADER*/
+
+.header {
+  margin: 50px 50px;
+  display: flex;
 }
 
-/* FLEXBOX */
-/* SERT A REPARTIR EQUITABLEMENT DES ELEMENTS SUR LA PAGE  */
-.flexbox ul {
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
+.header-left {
+  margin: 30px;
+  /* width: 50%; */
 }
 
-
-.flexbox li {
-    list-style: none;
-    height: 160px;
-    width: 160px;
-    margin: 10px;
-    background: turquoise;
-    /* Centrer un unique élément verticalament et horizantelement */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header-left-container {
+  margin: center;
 }
 
-/* GRID  */
-.grid-container{
-    display: grid;
-    grid-template-columns: 30% 70%;
+.header-rigth {
+  /* width: 50%; */
 }
 
-.grid img {
-    width: 80%;
-    margin-top: 20px;
-    display: block;
-    
+#modem {
+  width: 80%;
+  height: 80%;
+  margin: 15;
+  padding: 100px;
 }
 
-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "i1 i2"
-    "ta ta"
-    "vi bt";
+.infos {
 }
 
-input, textarea {
-    margin: 5px;
-    border: 1px solid darkblue;
-    padding: 10px;
-    font-size: 1.1rem;
-    font-family:"DMSerif" serif;
-    border-radius: 20px;
+.infos-left {
 }
 
-textarea {
-    grid-area: ta;
-    height: 40px;
-    resize: none; /*l'utilisateur ne peut pas modifier la taille du textarea*/
-    
-}
-
-#btn-submit {
-    grid-area: bt;
-    cursor: pointer;
-    background: cyan;
-    transition: 0.2s;
-    
-}
-
-#btn-submit:hover{
-    background: rgb(252, 47, 255);
-    color: rgb(245, 243, 245);
-}
-
-
-/* ABSOLUTE  */
-/* Sans élément en Relative, de base, l'élément en absolute l'est par rapport au Body */
-/* Il faut mettre une position relativ au parent pour contraindre
-l'élément en absolute dans les frontiére du parent */
-.absolute{
-    position: relative;
-}
-
-#circle1 {
-    height: 60px;
-    width: 60px;
-    background: skyblue;
-    position: absolute;
-    border-radius: 150px;
-    top: 50px;
-    right: -40px;
-
-}
-
-#circle2 {
-    height: 65px;
-    width: 65px;
-    background: yellowgreen;
-    position: absolute;
-    border-radius: 150px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 40px;
-}
-
-/* RESPONSIVE */
-
-@media screen and (max-width: 900px){
-    .grid-container{
-        display: block;
-    }
-    .grid-container img { 
-        width: 40%;
-        margin: auto;
-    }
-
-}
-
-@media screen and (max-width: 610px){
-    .flexbox ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    form{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "i1"
-        "i2"
-        "ta"
-        "bt";
-    }
-    input, textarea {
-        font-size: 0.8rem;
-    }
+.btn-container {
 }

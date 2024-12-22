@@ -1,49 +1,61 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Les bases du CSS</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Helium Flexbox</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <header>
-        <h1>Les bases du CSS</h1>
-    </header>
-    <main>
-        <div class="flexbox">
-            <h2>Flexbox</h2>
-            <ul>
-                <li>boite 1</li>
-                <li>boite 2</li>
-                <li>boite 3</li>
-            </ul>
-        </div>
+    <nav>
+        <h2>Helium</h2>
+        <ul>
+            <li>5G</li>
+            <li>Explorer</li>
+            <li>Ecosystem</li>
+        </ul>
+    </nav>
 
-        <div class="grid">
-            <h2>GRID</h2>
-            <div class="grid-container">
-                <img src="./asset/img/femme-qui-prie.png" alt="image d'une femme qui prie">
-
-                <form action="">
-                    <input type="text" id="firstname" placeholder="Prénom">
-                    <input type="text" id="surname" placeholder="Nom">
-                    <textarea cols="30" rows="10" placeholder="Ici votre message.."></textarea>
-                    <input type="submit" value="Valider" id="btn-submit">
-                </form>
+    <section class="header">
+        <div class="header-left">
+            <div class="header-left-container">
+                <h1>People-Powered Networks</h1>
+                <h3>Start a Wireless Revolution</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquid pariatur quae placeat veniam
+                    ratione
+                    repellendus obcaecati atque quibusdam non!</p>
             </div>
         </div>
-
-        <div class="absolute">
-            <h2>Absolute</h2>
-            <span id="circle1"></span>
-            <span id="circle2"></span>
-
+        <div class="header-right">
+            <img src="./asset/img/main.png" id="modem" alt="modem">
         </div>
-    </main>
+    </section>
+
+    <section class="infos">
+        <div class="infos-left">
+            <h3>Core Technologies</h3>
+            <div class="btn-container">
+                <button>Tokens</button>
+                <button>Proof of Coverage</button>
+                <button>LongFi</button>
+            </div>
+        </div>
+        <div class="infos-right">
+            <h3>Our Investors</h3>
+            <div class="investors">
+                <div class="img-container">
+                    <img src="./asset/img/investlogo2blue.png" alt="investor-1">
+                    <img src="./asset/img/investlogo3blue.png" alt="investor-2">
+                    <img src="./asset/img/investlogo4blue.png" alt="investor-3">
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 </body>
 
