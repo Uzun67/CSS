@@ -1,51 +1,65 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intégrer une maquette en flexbox</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <div class="card">
-        <h1>ONIZUKA</h1>
+    <nav class="navigation">
+        <h2>Helium</h2>
+        <ul>
+            <li>5G</li>
+            <li>Explorer</li>
+            <li>Ecosystem</li>
+        </ul>
+    </nav>
 
-        <div class="grid-container">
-            <div class="polygon-container">
-                <div class="polygon"></div>
+    <section class="header">
+        <div class="header-left">
+            <div class="header-left-container">
+                <h1>People-powered networks</h1>
+                <h3>Start a Wireless Revolution</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos iusto, nulla repellat quam accusamus
+                    architecto
+                    tempore vel quidem praesentium voluptatibus quas ratione mollitia, officia error explicabo
+                    necessitatibus
+                    reprehenderit reiciendis commodi?</p>
             </div>
-            <p>Ancien chef de gang reconverti en enseignant, Onizuka est doté d'un caractère impulsif, franc et parfois
-                grossier. Il n'en reste pas moins un professeur dévoué, faisant preuve d'une étonnante empathie envers
-                ses élèves. (et toujours puceau, un peu pervers sur les bords...) <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sint, eius aliquam placeat est nihil
-                sed fuga pariatur suscipit quisquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-                tempore quaerat eos nostrum, suscipit natus maiores velit veniam facilis assumenda! Voluptate eveniet
-                quaerat in perspiciatis, a similique recusandae labore amet esse magni nulla, minus velit exercitationem
-                quibusdam. Architecto, quos aspernatur quas minima beatae vitae, esse distinctio, veniam delectus iusto
-                animi.</p>
         </div>
-        <div class="checkbox-container">
-            <input type="checkbox" id="option1">
-            <label for="option1">Option 1</label>
-
-            <input type="checkbox" id="option2">
-            <label for="option2">Option 2</label>
-
-            <input type="checkbox" id="option3">
-            <label for="option3">Option 3</label>
+        <div class="header-right">
+            <img src="/asset/img/main.png" id="modem" alt="modem">
         </div>
+    </section>
 
-        <div class="e-mail">
-            <input type="text" placeholder="Entrer votre email">
+
+    <section class="infos">
+        <div class="infos-left">
+            <h3>Core Technologies</h3>
+            <div class="btn-container">
+                <button>Tokens</button>
+                <button>Proof of coverage</button>
+                <button>LongFi</button>
+            </div>
         </div>
+        <div class="infos-right">
+            <h3>Our investors</h3>
+            <div class="investors">
+                <div class="img-container">
+                    <img src="/asset/img/investlogo2blue.png" alt="Logo GV">
+                    <img src="/asset/img/investlogo3blue.png" alt="Logo Firstmark">
+                    <img src="/asset/img/investlogo4blue.png" alt="Logo Kosla ventures">
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <button>Valider</button>
-        <a href="http://www.google.com">Condition général de ventes</a>
-    </div>
 
-    <img src="./asset/img/pour-onizuka-removebg-preview.png" alt="fesses en lair">
 
 </body>
 
